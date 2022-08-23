@@ -1,5 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+    --backgroundColor: #F7F7FF;
+    --fontColor: #495867;
+    --progressCircleColor: #FF9F1C;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background: var(--backgroundColor);
+    color: var(--fontColor);
+    font-family: 'Bebas Neue', cursive;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.circle {
+    font-size: 2rem;
+}
+
+#progress-buttons {
+    background-color: ;
 }
