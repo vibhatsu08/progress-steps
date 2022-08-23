@@ -2,7 +2,9 @@
 :root {
     --backgroundColor: #F7F7FF;
     --fontColor: #495867;
-    --progressCircleColor: #FF9F1C;
+    --progressCircleColorFilled: #FFA630;
+    --progressCircleColorEmpty: #ffd49b;
+    --buttonBackgroundColor: #4F6367;
 }
 
 * {
@@ -15,27 +17,31 @@ body {
     background: var(--backgroundColor);
     color: var(--fontColor);
     font-family: 'Bebas Neue', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
 }
 
 #progress-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
 }
 
-.circle {
-    font-size: 2rem;
-}
-
-#progress-buttons {
-    background-color: ;
+#progress-container::before {
+    content: '';
+    background-color: var(--progressCircleColorEmpty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
