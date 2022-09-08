@@ -1,25 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-:root {
-    --backgroundColor: #F7F7FF;
-    --fontColor: #495867;
-    --progressCircleColorFilled: #FFA630;
-    --progressCircleColorEmpty: #ffd49b;
-    --buttonBackgroundColor: #4F6367;
-}
-
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 body {
-    background: var(--backgroundColor);
-    color: var(--fontColor);
-    font-family: 'Bebas Neue', cursive;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
     overflow: hidden;
 }
@@ -28,20 +17,9 @@ body {
     text-align: center;
 }
 
-#progress-container {
+.progress-container {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin-bottom: 30px;
-    max-width: 100%;
-    width: 350px;
-}
-
-#progress-container::before {
-    content: '';
-    background-color: var(--progressCircleColorEmpty);
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    align-items: center;
+    flex-direction: row;
 }
